@@ -25,7 +25,7 @@ class CalendarsController < ApplicationController
     @todays_date = Date.today
     # 例)　今日が2月1日の場合・・・ Date.today.day => 1日
 
-    @week_days = []
+    @wdays = []
 
     plans = Plan.where(date: @todays_date..@todays_date + 6)
 
